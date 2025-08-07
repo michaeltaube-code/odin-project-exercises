@@ -9,25 +9,18 @@
     
 <script>
 
-//
-// Funktion add7
-//
+// --- Function: add7 ---
+// Takes a number and adds 7 to it
 
-  // Definieren Sie Ihre Startzahl
 let number = 7;
-
-// Definieren Sie Ihre Funktion
 function add7(num) {
    return num + 7;
 }
-
-// Rufen Sie die Funktion direkt im console.log auf
-console.log(add7(number)); // Gibt ebenfalls 12 aus
+console.log(add7(number)); 
 
 
-///////////////////////
-// Function "multiply"
-
+// --- Function: multiply ---
+// takes to numbers and multiplies them with eachother
 
 function multiply(num1,num2) {
   let result = num1 * num2;
@@ -39,9 +32,9 @@ let num2 = 10;
 
 console.log(multiply(num1,num2));
 
-//////
-///// function "capitalize"
-/////
+// --- Function: capitalize ---
+// Input: string (any case)
+// Output: string with first letter uppercase, rest lowercase
 
 let string = "h34skl lkjklj DFDS jdsfHDKD";
 
@@ -52,6 +45,28 @@ function capitalize (string) {
 
 console.log(capitalize(string));
 
+// --- Function: lastLetter
+// Takes the last letter of a string and returns it
+
+let string2 = "HALLO DU DA";
+
+function lastLetter (string2) {
+  return string2.charAt(string2.length -1);
+ 
+}
+
+console.log(lastLetter(string2));
+
+
+
+// --- Function: lastLetterV2
+// Takes the last letter of a string and returns it with at()
+
+function lastLetterV2 (string2) {
+  return string2.at(-1);
+}
+
+console.log(lastLetterV2(string2));
 
 </script>
 
